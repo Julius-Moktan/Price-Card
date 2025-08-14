@@ -1,100 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset= "UTF-8">
-<meta name="viewport" content=" width=device-width, initial-scale= 1.0">
-<link rel= "stylesheet" href= "style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Price Card</title>
 <style>
-body{
-background:purple;
+body {
+  font-family: Arial, sans-serif;
+  background: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-header
-{
-background: black;
-color:white;
-padding: 1rem 2 rem;
-position:sticky;
-z-index: 100;
-top:0;
-align: center;
+header {
+  background: #000080;
+  color: white;
+  padding: 0.25rem 0.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: center;
 }
 
-#card{
-display: flex;
-justify-content: space-between;
+#card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+  gap: 20px;
 }
 
-.card-items{
-
-background white;
-color: black;
-padding: 2 rem;
+.card-items {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-button{
-background: purple;
-color: white;
-padding: 1rem;
-cursor: pointer;
-transition: background 0.3s ease;
+.card-items:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
-button:hover{
-background: white;
+button {
+  background: #000080;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-
-
-
-
-
-
+button:hover {
+  background: white;
+  color: purple;
+}
 </style>
 </head>
 <body>
 
 <header>
-<h1>Price Card</h1>
-<p>Using Flex Box CSS</p>
+  <h1>Price Card</h1>
+  <p>Using Flexbox CSS</p>
 </header>
 
 <div id="card">
-<div class="card-items">
-<h2>Basic</h2>
-<h2>Rs.100/month</h2>
-<p>10GB Storage</p>
-<hr>
-<p>Basic Support</p>
-<hr>
-<p>1 User</p>
-<hr>
-<button>Choose Plan</button>
+  <div class="card-items">
+    <h2>Basic</h2>
+    <h3>Rs.100/month</h3>
+    <p>10GB Storage</p>
+    <hr>
+    <p>Basic Support</p>
+    <hr>
+    <p>1 User</p>
+    <hr>
+    <button>Choose Plan</button>
+  </div>
 
+  <div class="card-items">
+    <h2>Pro</h2>
+    <h3>Rs.500/month</h3>
+    <p>100GB Storage</p>
+    <hr>
+    <p>Priority Support</p>
+    <hr>
+    <p>5 Users</p>
+    <hr>
+    <button>Choose Plan</button>
+  </div>
 
-<div class="card-items">
-<h2>Pro</h2>
-<h2>Rs.500/month</h2>
-<p>100GB Storage</p>
-<hr>
-<p>Priority Support</p>
-<hr>
-<p>5 User</p>
-<hr>
-<button>Choose Plan</button>
-
-<div id="card">
-<div class="card-items">
-<h2>Premium</h2>
-<h2>Rs.1000/month</h2>
-<p>Unlimited Storage</p>
-<hr>
-<p>24/7 Support</p>
-<hr>
-<p>Unlimited Users</p>
-<hr>
-<button>Choose Plan</button>
+  <div class="card-items">
+    <h2>Premium</h2>
+    <h3>Rs.1000/month</h3>
+    <p>Unlimited Storage</p>
+    <hr>
+    <p>24/7 Support</p>
+    <hr>
+    <p>Unlimited Users</p>
+    <hr>
+    <button>Choose Plan</button>
+  </div>
+</div>
 
 </body>
 </html>
